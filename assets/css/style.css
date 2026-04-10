@@ -1,0 +1,50 @@
+:root {
+  /* --- Primary Palette (60%) --- */
+  --color-primary-dark: #1A1C1E;
+  --color-primary-light: #2D2F31;
+
+  /* --- Secondary Palette (30%) --- */
+  --color-secondary: #F8F9FA;
+  --color-text-on-dark: #FFFFFF;
+  --color-text-on-light: #1A1C1E;
+
+  /* --- Tertiary/Accent Palette (10%) --- */
+  --color-accent: #FFB800;
+  --color-accent-hover: #CC9200;
+  --color-accent-glow: rgba(255, 184, 0, 0.2);
+
+  /* --- Feedback Colors --- */
+  --color-success: #27AE60;
+  --color-error: #EB5757;
+
+  /* --- Typography --- */
+  --font-main: 'Inter', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+
+  /* --- Layout Tokens --- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --transition-fast: 0.2s ease-in-out;
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Exemplo de aplicação rápida */
+body {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-on-dark);
+  font-family: var(--font-main);
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-primary-dark); /* Texto escuro no botão dourado para legibilidade */
+  font-family: var(--font-heading);
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-hover);
+  box-shadow: 0 0 15px var(--color-accent-glow);
+}

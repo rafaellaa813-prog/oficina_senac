@@ -57,10 +57,10 @@ body{
   color:var(--bem-text);
   background:var(--bem-bg);
   transition: background .25s, color .25s;
-  cursor: url(../imagens/cursor/cursor.svg) auto;
+  cursor: url(../asset/imagem/cursor.svg) auto;
 }
 a{
-  cursor: url(../imagens/cursor/cursor.svg) auto;
+   cursor: url(../asset/imagem/cursor.svg) auto;
   text-decoration: none;
 }
 header{
@@ -72,7 +72,7 @@ header{
 .bem-logo{
   position: absolute;
   top: 0px;
-  left: 50px;
+  left: 400px;
   /*                     x  y     */
   transform: translateY(-30,0px);
   z-index: 101px;
@@ -107,8 +107,9 @@ header{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: black;
+  background-color: rgb(240, 232, 232);
   color: var(--bem-spacing-md);
+  color: white;
 }
 .bem-hero__titulo{
   display: flex;
@@ -121,6 +122,7 @@ header{
   top: 0;
   left: 0;
   width: 50%;
+  color: rgb(192, 190, 190);
   height: 100%;
   z-index: 10;
   padding: 50px;
@@ -131,6 +133,7 @@ header{
   bottom: 0%;
   right: 0%;
   z-index: 2;
+  transform: translate(30px, -50px);
 }
 /* cover=estica e contain+mantem o original */
 .bem-container{

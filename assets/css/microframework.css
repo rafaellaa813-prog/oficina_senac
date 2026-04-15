@@ -4,7 +4,7 @@
   --bem-secondary:#8b5cf6;
   --bem-success:#10b981;
   --bem-danger:#ef4444;
-  --bem-warning:#f59e0b;
+  --bem-terciary:#f59e0b;
   --bem-dark:#1f2937;
   --bem-light:#f3f4f6;
   --bem-bg:#ffffff;
@@ -55,13 +55,14 @@ body{
   font-family:var(--bem-font-base);
   line-height:1.5;
   color:var(--bem-text);
-  background:var(--bem-bg);
+  background:var(--bem-text);
   transition: background .25s, color .25s;
   cursor: url(../asset/imagem/cursor.svg) auto;
 }
 a{
    cursor: url(../asset/imagem/cursor.svg) auto;
   text-decoration: none;
+  color: var(--bem-bg);
 }
 header{
   display: flex;
@@ -73,7 +74,7 @@ header{
   position: absolute;
   top: 0px;
   left: 400px;
-  /*                     x  y     */
+  /*                     x   y*/
   transform: translateY(-30,0px);
   z-index: 101px;
 }
@@ -82,28 +83,36 @@ header{
   align-items: center;
   justify-content: space-around;
   padding: var(--bem-spacing-md) var(--bem-spacing-lg);
-  background-color: var(--bem-surface);
   box-shadow: var(--bem-shadow-sm);
   border-bottom: 1px solid var(--bem-border);
   transition: background .25s;
-  position: sticky; top: 70px; z-index: 100;
+  position: sticky;
+  top: 0;
+  background-color: var(--bem-dark);
+  color: var(--bem-dark);
+  z-index: 100;
+  width: 100%;
 }
 .bem-navbar--secundaria{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   padding: var(--bem-spacing-md) var(--bem-spacing-lg);
-  background-color: var(--bem-surface);
   box-shadow: var(--bem-shadow-sm);
   border-bottom: 1px solid var(--bem-border);
   transition: background .25s;
   position: sticky; top: 70px; z-index: 10;
+  background-color: var(--bem-bg);
+  color: var(--bem-dark);
 }
 .bem-hero{
   /* relativo pra controlar a posiçao absoluta de seus filhos*/
-  height:80vh;
   position: relative;
-  background-image: url(../imagens/fundo.1.jpg);
+  display: flex;
+  align-content: center;
+
+  height:65.75vh;
+  background-image: url(../imagens/fundo1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -312,8 +321,8 @@ header{
 .bem-navbar__menu{ display:flex;gap:var(--bem-spacing-lg);list-style:none;align-items:center }
 .bem-navbar__item{ display:inline-flex }
 .bem-navbar__link{ text-decoration:none;color:var(--bem-text-muted);padding:var(--bem-spacing-sm);transition:color .2s }
-.bem-navbar__link:hover{ color:var(--bem-primary) }
-.bem-navbar__link--active{ color:var(--bem-primary);font-weight:600 }
+.bem-navbar__link:hover{ color:var(--bem-text-muted) }
+.bem-navbar__link--active{ color:var(--bem-terciary);font-weight:600 }
 .bem-navbar__toggle{ display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--bem-text) }
 .bem-modal{
   position:fixed;inset:0;

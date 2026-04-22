@@ -77,7 +77,7 @@ header{
   /*                     x   y*/
   transform: translateY(-30,0px);
   z-index: 101px;
-  width: 100px;
+  width: 80px;
 }
 .bem-navbar{
  display: flex;

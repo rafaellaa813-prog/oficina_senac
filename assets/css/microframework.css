@@ -51,6 +51,9 @@
   --bem-border:#334155;
   --bem-light:#334155;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family:var(--bem-font-base);
   line-height:1.5;
@@ -101,7 +104,7 @@ header{
   box-shadow: var(--bem-shadow-sm);
   transition: background .25s;
   position: sticky; top: 70px; z-index: 10;
-  background-color: var(--bem-bg);
+  background-color: var(--bem-dark);
   color: var(--bem-dark);
 }
 .bem-hero{
@@ -142,6 +145,13 @@ header{
   right: 0%;
   z-index: 2;
   transform: translate(30px, -50px);
+}
+.bem-titulo-h2{
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  font-size: 1.5rem;
+  color: var(--bem-terciary);
 }
 /* cover=estica e contain+mantem o original */
 .bem-container{

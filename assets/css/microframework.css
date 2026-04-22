@@ -73,7 +73,7 @@ header{
 .bem-logo{
   position: absolute;
   top: 0px;
-  left: 400px;
+  left: 50px;
   /*                     x   y*/
   transform: translateY(-30,0px);
   z-index: 101px;
@@ -85,7 +85,6 @@ header{
   justify-content: space-around;
   padding: var(--bem-spacing-md) var(--bem-spacing-lg);
   box-shadow: var(--bem-shadow-sm);
-  border-bottom: 1px solid var(--bem-border);
   transition: background .25s;
   position: sticky;
   top: 0;
@@ -100,7 +99,6 @@ header{
   justify-content: center;
   padding: var(--bem-spacing-md) var(--bem-spacing-lg);
   box-shadow: var(--bem-shadow-sm);
-  border-bottom: 1px solid var(--bem-border);
   transition: background .25s;
   position: sticky; top: 70px; z-index: 10;
   background-color: var(--bem-bg);
@@ -410,7 +408,18 @@ header{
   .bem-container--narrow{width:100%; max-width: 768px; }
   .bem-hero_imagem{
     display: none;
-
+  }
+  .bem-navbar--secundaria{
+  position: fixed; top: 0px; z-index: 150;
+  }
+  .bem-logo{
+    position: fixed;
+    top: 0;
+    left: calc(50%);
+    z-index: 151; 
+  }
+  .bem-navbar{
+    display: none;
   }
   .bem-grid--cols-2,.bem-grid--cols-3,.bem-grid--cols-4 { grid-template-columns: 1fr }
   .bem-navbar__menu{ display:none }
@@ -421,10 +430,12 @@ header{
     flex-direction:column;
     align-items: stretch;
     position:absolute; top:100%; left:0; right:0;
-    background-color:var(--bem-surface);
+    background-color:var(--bem-dark);
     padding:var(--bem-spacing-md);
     box-shadow:var(--bem-shadow-md);
     animation:bem-slide-up 0.3s forwards;
     z-index: 1000;
+    height: 100vh;
+    font-size: 1.5rem;
   }
 }

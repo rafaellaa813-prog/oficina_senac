@@ -82,6 +82,19 @@ header{
   z-index: 101px;
   width: 80px;
 }
+.icon-marcas{
+  width: 100px;
+}
+.conteiner-icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 100%;
+  margin: var(--bem-radius-sm) 0;
+  padding: var(--bem-radius-sm) ;
+}
 .bem-navbar{
  display: flex;
   align-items: center;

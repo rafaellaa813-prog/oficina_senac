@@ -1,6 +1,6 @@
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --bem-primary:#3b82f6;
+  --bem-primary:#0c0c0c;
   --bem-secondary:#8b5cf6;
   --bem-success:#10b981;
   --bem-danger:#ef4444;
@@ -58,7 +58,7 @@ body{
   font-family:var(--bem-font-base);
   line-height:1.5;
   color:var(--bem-text);
-  background:var(--bem-dark);
+  background:var(--bem-light);
   transition: background .25s, color .25s;
   cursor: url(../asset/imagem/cursor.svg) auto;
 }
@@ -110,6 +110,7 @@ header{
   width: 50%;
   height: 300px;
   z-index: 5;
+  background-color: var(--bem-text-muted);
 }
 .sobre-descricao{
   position: absolute;
@@ -118,9 +119,9 @@ header{
   display: flex;
   flex-direction: column;
   width: 60%;
-  border: yellow 2px solid;
   height: 300px;
   color: var(--bem-light);
+  background-color: var(--bem-dark);
 }
 .bem-navbar{
  display: flex;
@@ -191,7 +192,12 @@ header{
   align-items: center;
   margin: 20px;
   font-size: 1.5rem;
-  color: var(--bem-terciary);
+  color: var(--bem-primary);
+}
+p{
+  color: var(--bem-primary);
+  padding: 10px 100px;
+  color: var(--bem-text-muted);
 }
 /* cover=estica e contain+mantem o original */
 .bem-container{
@@ -332,7 +338,7 @@ header{
 .bem-form__textarea{ min-height:100px;resize:vertical }
 .bem-form__help{ font-size:.875rem;color:var(--bem-text-muted) }
 .bem-form__error{ font-size:.875rem;color:var(--bem-danger) }
-.bem-form__checkbox,.bem-form__radio{ display:flex;align-items:center;gap:var(--bem-spacing-sm) }
+.bem-form__checkbox,.btitulom-form__radio{ display:flex;align-items:center;gap:var(--bem-spacing-sm) }
 .bem-form__checkbox input,.bem-form__radio input{ width:auto }
 .bem-alert{
   padding:var(--bem-spacing-md);
@@ -371,7 +377,7 @@ header{
 .bem-navbar__brand{ font-size:1.5rem;font-weight:700;text-decoration:none;color:inherit}
 .bem-navbar__menu{ display:flex;gap:var(--bem-spacing-lg);list-style:none;align-items:center }
 .bem-navbar__item{ display:inline-flex }
-.bem-navbar__link{ text-decoration:none;color:var(--bem-text-muted);padding:var(--bem-spacing-sm);transition:color .2s }
+.bem-navbar__link{ text-decoration:none;color:var(--bem-text-muted);padding:var(--bem-spacing-sm);transition:color .2s () }
 .bem-navbar__link:hover{ color:var(--bem-text-muted) }
 .bem-navbar__link--active{ color:var(--bem-terciary);font-weight:600 }
 .bem-navbar__toggle{ display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--bem-text) }

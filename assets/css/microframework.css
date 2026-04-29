@@ -119,7 +119,7 @@ header{
   display: flex;
   flex-direction: column;
   width: 60%;
-  height: 400px;
+  height: 370px;
   color: var(--bem-light);
   background-color: var(--bem-dark);
 }
@@ -522,9 +522,25 @@ p{
   z-index: 9;
   cursor: ew-resize;
   /*set the appearance of the slider:*/
-  width: 40px;
+  width: 80px;
   height: 40px;
-  background-color: #2196F3;
+  background-color: var(--bem-terciary);
   opacity: 0.7;
-  border-radius: 50%;
+  border-radius: 100px;
+ clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+.img-comp-overlay::after{
+  content: "antes";
+  position: absolute;
+  top:  0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-color: var(--bem-light);
+  color: var(--bem-terciary);
+  font-size: 1.4rem;
+}
+
+.img-comp-overlay{
+  border-right: solid 2px var(--bem-terciary);
 }

@@ -97,6 +97,7 @@ header{
 }
 #sobre{
   position: relative;
+  height: 400px;
 }
 .sobre-img{
   position: absolute;
@@ -118,7 +119,7 @@ header{
   display: flex;
   flex-direction: column;
   width: 60%;
-  height: 500px;
+  height: 400px;
   color: var(--bem-light);
   background-color: var(--bem-dark);
 }

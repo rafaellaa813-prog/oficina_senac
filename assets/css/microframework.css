@@ -524,10 +524,24 @@ p{
   /*set the appearance of the slider:*/
   width: 80px;
   height: 40px;
-  background-color: var(--bem-terciary);
-  opacity: 0.7;
+  background-image: url(..assets/projetos/setas.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 100px;
- clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  animation: esquerda-direita .6s 6;
+}
+/* keyframes */
+@keyframes  esquerda-direita{
+  0%{
+       left: 111px;
+  }
+  50%{
+        left: 108px;
+  }
+  100%{
+        left: 111px;
+  }
+ 
 }
 .img-comp-overlay::after{
   content: "antes";

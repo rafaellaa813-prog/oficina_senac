@@ -503,6 +503,9 @@ p{
 .img-comp-container {
   position: relative;
   height: 200px; /*should be the same height as the images*/
+  margin: 0 20px;
+  
+
 }
 
 .img-comp-img {
@@ -524,9 +527,10 @@ p{
   /*set the appearance of the slider:*/
   width: 80px;
   height: 40px;
-  background-image: url(..assets/projetos/setas.svg);
+  background-image: url(../projetos/setas.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   border-radius: 100px;
   animation: esquerda-direita .6s 6;
 }

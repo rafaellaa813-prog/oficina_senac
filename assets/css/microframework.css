@@ -83,17 +83,22 @@ header{
   width: 80px;
 }
 .icon-marcas{
-  width: 100px;
+  width: 96px;
+  height: 96px;
+  min-width: 96px;
+  min-height: 96px;
+  max-width: 120px;
+  max-height: 120px;
 }
-.conteiner-icons{
+.container-icons{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 1.5rem;
   width: 100%;
-  margin: var(--bem-radius-sm) 0;
-  padding: var(--bem-radius-sm) ;
+  margin: 1.5rem auto;
+  padding: 1.5rem 0;
 }
 #sobre{
   position: relative;

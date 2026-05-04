@@ -128,20 +128,6 @@ header{
   color: var(--bem-light);
   background-color: var(--bem-dark);
 }
-.bem-navbar{
- display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: var(--bem-spacing-md) var(--bem-spacing-lg);
-  box-shadow: var(--bem-shadow-sm);
-  transition: background .25s;
-  position: sticky;
-  top: 0;
-  background-color: var(--bem-dark);
-  color: var(--bem-dark);
-  z-index: 100;
-  width: 100%;
-}
 .bem-navbar--secundaria{
   display: flex;
   align-items: center;
@@ -376,7 +362,7 @@ p{
   box-shadow:var(--bem-shadow-sm);
   border-bottom:1px solid var(--bem-border);
   transition:background .25s;
-  position:sticky; top:0; z-index:100;
+  position:fixed; top:0; z-index:100; width:100%;
 }
 .bem-navbar--dark{ background-color:var(--bem-dark);color:#fff }
 .bem-navbar__brand{ font-size:1.5rem;font-weight:700;text-decoration:none;color:inherit}

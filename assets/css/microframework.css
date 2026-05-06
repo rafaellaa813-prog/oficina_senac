@@ -488,29 +488,27 @@ p{
     font-size: 1.5rem;
   }
 }
+#servico{
+  margin: 50px auto;
+}
 #projetos{
-  position: relative;
+  margin: 50px auto;
 }
 .img-comp-container {
   position: relative;
   height: 200px; /*should be the same height as the images*/
   margin: 0 20px;
-  
-
 }
-
 .img-comp-img {
   position: absolute;
   width: auto;
   height: auto;
   overflow: hidden;
 }
-
 .img-comp-img img {
   display: block;
   vertical-align: middle;
 }
-
 .img-comp-slider {
   position: absolute;
   z-index: 9;
@@ -550,10 +548,10 @@ p{
   font-size: 1.4rem;
 }
 
-
 .img-comp-overlay{
   border-right: solid 2px var(--bem-terciary);
 }
+
 
 .columns {
   float: left;

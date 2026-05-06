@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const footer = document.getElementById("footer-container");
+    const footerContainer = document.getElementById("footer-container");
     footerContainer.innerHTML = `   
         <div class="bem-grid-auto bem-container">
             <div class="footer-coluna">

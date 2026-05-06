@@ -1,6 +1,5 @@
 // HTML da Navbar Principal (Topo)
 const htmlNavbarPrincipal = `
-    <nav class="bem-navbar">
         <header>
             <a href="index.html" class="bem-navbar__brand">
                 <svg class="bem-logo" height="100px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.853 512.853" xml:space="preserve" fill="#000000">
@@ -70,12 +69,10 @@ const htmlNavbarPrincipal = `
                 </a>
             </li>
         </ul>
-    </nav>
 `;
 
 // HTML da Navbar Secundária (Menu de Navegação)
 const htmlNavbarSecundaria = `
-    <nav class="bem-navbar--secundaria bem-container">
         <input type="checkbox" id="nav-toggle" class="bem-navbar__checkbox">
         <label for="nav-toggle" class="bem-navbar__toggle">☰</label>
         <ul class="bem-navbar__menu">
@@ -98,7 +95,6 @@ const htmlNavbarSecundaria = `
                 <a href="index.html#contato" class="bem-navbar__link">Contato</a>
             </li>
         </ul>
-    </nav>
 `;
 
 function renderizarNavbars() {

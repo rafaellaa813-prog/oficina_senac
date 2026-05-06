@@ -610,4 +610,17 @@ p{
 #footer-container{
   width: 100%;
   background-color: var(--bem-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.bem-navbar__footer{
+  list-style: none;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
